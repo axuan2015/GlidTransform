@@ -143,6 +143,7 @@ public class MainAdapter extends RecyclerView.Adapter<MainAdapter.ViewHolder> {
                         .into(holder.image);
                 break;
             case Grayscale:
+
                 Glide.with(mContext)
                         .load(R.drawable.demo)
                         .bitmapTransform(new GrayscaleTransformation(mContext))
